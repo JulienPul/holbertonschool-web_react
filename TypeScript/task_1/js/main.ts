@@ -30,3 +30,12 @@ const director1: Directors = {
 };
 
 console.log(director1);
+
+interface printTeacher {
+  (firstName: string, lastName: string): string;
+}
+const printTeacher: printTeacher = (firstName, lastName) =>
+  `${firstName.charAt(0).toUpperCase()}. ${lastName}`;
+
+console.log(printTeacher("John", "Doe"));
+
